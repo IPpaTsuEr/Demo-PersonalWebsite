@@ -1,0 +1,457 @@
+body {
+    width:100%;
+    height :100%;
+    background-color:rgba(13,123,223,.5);
+    margin:0;
+    padding:0;
+    color:white;
+    overflow:hidden;
+
+}
+/*#content browser { margin-right:-14px!important; overflow-y:scroll; overflow-x:hidden;}*/
+a {
+     color: rgba(12, 121, 221, .7);
+     text-decoration: none;
+ }
+section {
+    width:100%;
+    background-size: cover;
+}
+section:nth-child(2n){
+    background-color:wheat;
+}
+nav {
+    z-index: 999;
+    margin:0;
+    padding:0;
+    height:64px;
+    width:100%;
+    position:fixed;
+    line-height:64px;
+    background-color:rgba(255,255,255,.4);
+}
+nav a{
+    margin:0 12px;
+    font:bold 18px  "微软雅黑","宋体";
+    cursor: pointer;
+}
+nav a:hover{
+    text-shadow:1px 1px 14px rgb(34, 142, 255);
+}
+footer{
+    height: 126px;
+    width:100%;
+    margin:-126px 0;
+    background-color:black;
+    text-align: center;
+}
+footer a,footer p{
+    margin:0;
+    padding:0;
+    color: rgba(187, 214, 214, 0.83);
+    line-height:40px;
+    text-shadow: #e6fffc 1px 1px 10px;
+}
+footer a:hover{
+    color: #ffa80c;
+}
+#mask{
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    z-index: 9999;
+    position:absolute;
+    background-color:rgb(38,51,68);
+}
+#mask div{
+    position:absolute;
+    margin:-85px 0 0 -100px;
+    left:50%;
+    top:50%;
+    height:170px;
+    width:200px;
+    background-image: url("src/Bubble_hover.png");
+    cursor:pointer;
+}
+#mask div:hover{
+    background-image:url("src/Bubble2.png");
+}
+.panel{
+    position :absolute;
+    padding:0;
+    width:100%;
+    height:64px;
+    background-color:rgba(255,255,255,.6);
+}
+#panel_zero{
+    margin:-32px 0 0 0;
+}
+#panel_one{
+    margin:-32px 0 0 0;
+}
+#panel_two{
+    margin:-32px 0 0 0;
+}
+#panel_three{
+    margin:-32px 0 0 0;
+}
+.div_one>div{
+    height: 300px;
+    width: 600px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+}
+.div_one>div>h1{
+    font: 54px "微软雅黑","宋体";
+    text-shadow: 2px 2px 32px #000000;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: default;
+}
+.div_one>div>h1:hover{
+    text-shadow: 2px 2px 32px #00fff8;
+    color: rgb(96, 96, 96);
+}
+.div_one>div>h3{
+    left: 300px;
+    position: relative;
+    font-size: 23px;
+    top: 63px;
+    text-shadow: 2px 2px 32px #000000;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: default;
+}
+.div_one>div>h3:hover{
+    text-shadow: 2px 2px 32px #00fff5;
+    color: rgb(96, 96, 96);
+}
+.div_two>div{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 600px;
+    width: 800px;
+    margin-left: -400px;
+    margin-top: -300px;
+}
+.div_two>div>div{
+    float:left;
+    width:230px;
+    margin-top: 60px;
+}
+.div_two>div>div:nth-child(2){
+    width:520px;
+    margin-left: 30px;
+}
+.div_two>div>div:nth-child(3){
+    width:520px;
+    margin-left: 30px;
+}
+.div_two>div>div>div{
+    display:block;
+    height: auto;
+    margin-left:16px;
+    float: none;
+    font:14px "微软雅黑","宋体";
+    text-shadow: #888888 1px 1px 1px;
+}
+.div_two>div>div>sub,h2{
+    text-shadow: #888888 1px 1px 1px;
+}
+.div_two>div>div>img{
+    box-shadow: 2px 2px 32px rgba(0, 219, 255, 0.86);
+    border-radius: 10px;
+}
+.div_two>div>div>img:hover{
+    box-shadow: 2px 2px 32px rgb(0, 133, 255);
+}
+.div_four>div{
+    background: none repeat scroll 0% 0% rgba(219, 255, 243, 0.33);
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    position: relative;
+    height: 400px;
+    width: 900px;
+    left: 50%;
+    top: 50%;
+    margin-left: -450px;
+    margin-top: -200px;
+}
+.div_four>div>div{
+    width: 800px;
+    height: 500px;
+    margin: 0 0 0 -400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+#form{
+    position: relative;
+    height: 80%;
+    top: 10%;
+    width: 90%;
+    left: 5%;
+}
+#msg{
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    padding: 25px 15px 25px 10px;
+    font: 14px "微软雅黑","宋体";
+    color: #e8c12a;
+    text-shadow: 1px 1px 1px #FFF;
+}
+#msg label {
+    display: block;
+    margin: 0;
+}
+#msg label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px 10px rgb(0, 0, 0);
+}
+#msg input[type="text"], #msg input[type="email"], #msg textarea{
+    border: 1px solid #ffffff;
+    background-color:white;
+    color: #000000;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ecd058;
+    -moz-box-shadow: inset 0px 1px 4px #ecd058;
+    -webkit-box-shadow: inset 0px 1px 4px #ecd058;
+}
+#msg textarea{
+    resize:none;
+    padding: 5px 3px 3px 5px;
+    height:100px;
+    background-color:white;
+}
+#msg .button {
+    background: rgba(226, 177, 21, 0.60);
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px rgba(241, 255, 96, 0.96);
+    cursor: pointer;
+}
+#msg .button:hover {
+    background: rgba(255, 153, 0, .70);
+    color: #595959;
+    text-shadow: 1px 1px 10px white;
+}
+#msg>label>a{
+    position: relative;
+    float: right;
+    margin: 0 100px 0 0;
+    cursor:pointer;
+    color: #e6fffc;
+    text-shadow:1px 1px 12px rgb(0, 0, 0);
+}
+#msg>label>a:hover{
+
+    color: #eeffd6;
+    text-shadow:1px 1px 12px rgba(255, 220, 6, 0.92);
+}
+
+.flo{
+    background-color:rgba(255,255,255,.4);
+    margin:15px;
+    border-radius: 15px;
+}
+h4{
+    text-shadow:1px 1px 1px rgba(0, 212, 255, 0.66);
+}
+.aa{
+    text-align: center;
+    margin-left: -400px;
+    margin-top: -300px;
+    height: 600px;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    position: relative;
+}
+.aa>h3{
+    text-shadow: 2px 2px 2px #05dd11;
+   -webkot-text-stroke:1px red;
+}
+.aa>span{
+    display:block;
+    text-shadow:1px 1px 11px rgb(7, 99, 18);
+    margin:10px;
+}
+.aa>img{
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow:4px 4px 20px rgba(26, 26, 26, 0.71);
+}
+section>div{
+    position:absolute;
+    margin:0;
+    left:5%;
+    padding:5%;
+    width:80%;
+    height: 80%;
+}
+section>div#prj_panel{
+    padding:64px 0;
+}
+section>div>div{
+    display:block;
+    float:left;
+}
+#pop_panel{
+    height:128px;
+    width:260px;
+    border-radius: 5px;
+    background-color:rgba(1,1,1,.5);
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -64px 0px 0px -130px;
+	line-height: 128px;
+	box-shadow: 2px 2px 12px black;
+	text-shadow: 1px 1px 12px orange;
+}
+#note_panel{
+    height: 32px;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    background-color: #E9C5BA;
+    box-shadow: 2px 2px 25px gray;
+    border-color: orange;
+    border-width: 2px;
+    text-align: center;
+}
+#note_panel>h5{
+    position: relative;
+    text-shadow: 2px 2px 12px rgba(233, 89, 52, 0.79);
+    top: -16px;
+}
+#note_panel>h5>a{
+    cursor: pointer;
+    color: rgba(9, 218, 255, 0.75);
+}
+#note_panel>h5>a:hover{
+    color: rgba(49, 176, 255, 0.76);
+}
+#list_panel{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 1px 1px 13px #a5a5a5;
+    border-radius: 5px;
+    z-index:9999998;
+    padding:0;
+}
+#list_zone{
+    width: 96%;
+    left: 2%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.23);
+    top: 5%;
+    position: relative;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+#list_zone>div{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.76);
+    height:64px;
+    overflow:hidden;
+    float: left;
+    position: relative;
+    border: 1px solid rgba(242, 213, 0, 0.49);
+    color: rgba(12, 12, 11, 0.80);
+    text-shadow: 1px 1px 2px rgba(242, 248, 255, 0.82);
+}
+#list_zone>div:hover{
+    background-color: rgba(255, 255, 255, 0.95);
+    height:auto;
+}
+#list_zone>div>div:nth-child(3n){
+    width:100%;
+    height: auto;
+}
+#list_zone>div>div:nth-child(3n-1){
+    box-shadow: 1px 1px 12px rgb(255, 255, 255);
+}
+#list_zone>div>div:nth-child(3n-2){
+    box-shadow: 1px 1px 12px black;
+    height:64px;
+    line-height: 64px;
+}
+#list_zone>div>div:nth-child(3n-2):hover{
+    height:64px;
+}
+#list_zone>div>div>span{
+    margin-left: 20px;
+}
+.e_mail,.time{
+    float: right;
+    font-size: 13px;
+    margin-right: 15px;
+}
+#close_list{
+    position: relative;
+    background-color: rgba(50, 49, 48, 0.75);
+    box-shadow: 1px 1px 13px black;
+    padding:0;
+    left: 93%;
+    top: 9%;
+    border-radius: 500px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    z-index:9999999;
+}
+#close_list:hover{
+    color: #000000;
+    background-color: rgba(255, 246, 152, 0.75);
+}
+@keyframes maskdiappear {
+    0%{width:100%;height:100%;opacity:1;}
+    100%{width:200%;height:200%;opacity:0;}
+}
+@-moz-keyframes maskdiappear{
+    0%{width:100%;height:100%;opacity:1;}
+    100%{width:200%;height:200%;opacity:0;}
+}
+@-webkit-keyframes maskdiappear{
+    0%{width:100%;height:100%;opacity:1;}
+    100%{width:200%;height:200%;opacity:0;}
+}
+
+.maska{
+    -moz-animation:1s maskdiappear linear forwards;
+    -webkit-animation:1s maskdiappear linear forwards;
+    animation:1s maskdiappear linear forwards;
+}
